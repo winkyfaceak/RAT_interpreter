@@ -1,0 +1,9 @@
+func rat(n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return rat(n-1) + rat(n-2);
+    }
+}
+
+print rat(1);
